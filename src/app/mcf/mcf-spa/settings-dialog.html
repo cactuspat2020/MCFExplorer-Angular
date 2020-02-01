@@ -1,0 +1,123 @@
+<div align="center">
+  <!-- <h2>Please select an active configuration</h2> -->
+
+  <!-- <div>
+    <mat-slide-toggle class="simSlider" [(checked)]="simulation">Simulation Mode</mat-slide-toggle>
+  </div> -->
+
+  <!-- <mat-radio-group aria-label="API Selection" [(value)]="serviceConfig"> -->
+    <!-- <mat-radio-button value="1"> -->
+      <table class="localTable mat-elevation-z8">
+        <tr>
+          <th colspan="2">MWS Configuration Parameters</th>
+        <tr>
+          <td class="leftCol">
+            Regional Endpoint
+          </td>
+          <td class="rightCol">
+            <mat-form-field>
+              <mat-select [(value)]="settings.selectedEndpoint">
+                <mat-option *ngFor="let endpoint of endpoints" [value]="endpoint.endpointURL">
+                  {{endpoint.marketplace}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            MerchantId
+          </td>
+          <td class="rightCol">
+              <input matInput class="setting" [(ngModel)]="settings.merchantId">
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            MWS Auth Token
+          </td>
+          <td class="rightCol">
+              <input matInput class="setting" placeholder="MWS Auth Token" [(ngModel)]="settings.mwsAuthToken">
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            Developer ID
+          </td>
+          <td class="rightCol">
+              <input matInput class="setting" placeholder="Developer ID" [(ngModel)]="settings.developerId">
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            Developer Secret Key
+          </td>
+          <td class="rightCol">
+              <input matInput class="setting" type="password" placeholder="Secret Key" [(ngModel)]="settings.developerSecretKey">
+          </td>
+        </tr>
+      </table>
+    <!-- </mat-radio-button> -->
+    <!-- <mat-radio-button value="2"> -->
+      <!-- <table class="localTable mat-elevation-z8">
+        <tr>
+          <th colspan="2">Spectrum Config</th>
+        <tr>
+          <td class="leftCol">
+            Regional Endpoint
+          </td>
+          <td class="rightCol">
+            <mat-form-field>
+              <mat-select [(value)]="selectedEndpoint">
+                <mat-option *ngFor="let endpoint of endpoints" [value]="endpoint.endpointURL">
+                  {{endpoint.marketplace}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            MerchantId
+          </td>
+          <td class="rightCol">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="MerchantId">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            MWS Auth Token
+          </td>
+          <td class="rightCol">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="MWS Auth Token">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            Developer ID
+          </td>
+          <td class="rightCol">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Developer ID">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="leftCol">
+            Developer Secret Key
+          </td>
+          <td class="rightCol">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Secret Key">
+            </mat-form-field>
+          </td>
+        </tr>
+      </table> -->
+    <!-- </mat-radio-button> -->
+  <!-- </mat-radio-group> -->
+    <button mat-raised-button color='primary' (click)="saveSettings() ">OK</button>
+</div>

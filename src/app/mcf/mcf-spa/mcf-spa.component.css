@@ -1,0 +1,30 @@
+.example-tab-icon {
+  margin-right: 8px;
+}
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.simSlider {
+  padding-bottom: 50px;
+}
+
+.mat-card {
+  width: 300px;
+}
+.localTable {
+  /* margin-left: 30px; */
+  /* margin-top: 30px; */
+  margin-bottom: 30px;
+}
+.leftCol {
+  width: 180px;
+  padding-left: 20px;
+}
+.rightCol {
+  padding-right: 20px;
+}
+
+.setting {
+  padding-bottom: 20px;
+}

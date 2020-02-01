@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+    <span>MCF Explorer </span>
+    <span class="fill-space"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="settings_menu" aria-label="Example icon-button with a heart icon">
+      <mat-icon>settings_application</mat-icon>
+    </button>
+    <mat-menu #settings_menu="matMenu">
+      <button (click)="openSettingsDialog()" mat-menu-item>
+        <span>Settings</span>
+      </button>
+      <button (click)="logout()" mat-menu-item>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons example-tab-icon">assignment</i>
+      Inventory
+    </ng-template>
+    <app-inventory></app-inventory>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons example-tab-icon">shopping_cart</i>
+      Orders
+    </ng-template>
+    <app-orders></app-orders>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons example-tab-icon">local_shipping</i>
+      Shipments
+    </ng-template>
+    <app-shipping></app-shipping>
+  </mat-tab>
+
+</mat-tab-group>

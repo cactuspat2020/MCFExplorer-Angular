@@ -1,0 +1,58 @@
+.banner {
+  background-color: rgb(255, 160, 122);
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.info {
+  align-content:center;
+  align-items: center;
+  align-self: center;
+}
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.blurb {
+  padding-right:30px;
+  padding-left:30px;
+}
+.blurbox {
+  background-color: yellow;
+  align-items:center;
+  text-align:center;
+  width:300;
+}
+table {
+  margin-bottom: 50px;
+}
+tableimage {
+  width: 300px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+.mat-raised-button {
+  background-color: lightsalmon;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+td {
+  width: 300px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.mat-card {
+  padding: 0px;
+}
